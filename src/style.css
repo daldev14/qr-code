@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Outfit', 'sans-serif';
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-light-gray);
+}
+
+/*  */
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--color-white);
+  width: 285px;
+  height: fit-content;
+  padding: 15px 20px 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 1.8rem;
+
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card__figure {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 2rem;
+  background: url('../src/img/background.png');
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__img {
+  width: 170px;
+  height: 170px;
+}
+
+.card__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-dark-blue);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card__text {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--color-grayish-blue);
+}
+
+/* From uiverse.io by @alexruix */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card__input {
+  min-height: 30px;
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  border: 1px solid #2b7dfa;
+  border-radius: 6px;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.card__button {
+  min-height: 20px;
+  width: 100%;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 6px;
+  background-color: #2b7dfa;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.card__button:hover {
+  background-color: #2b7dfa;
+}
+
+.card__input:focus,
+.card__input:focus-visible {
+  border-color: #7aaefc;
+  outline: none;
+}

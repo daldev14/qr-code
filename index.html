@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR code</title>
+  <link rel="shortcut icon" href="./src/img/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script defer src="./src/generate-qr.js"></script>
+</head>
+
+<body>
+  <main>
+    <section class="card">
+      <figure class="card__figure">
+        <div class="card__img" id="containerQR"></div>
+      </figure>
+      <div class="card__info">
+        <h1 class="card__title">Enter the URL to generate QR code</h1>
+        <form action="" id="formQR">
+          <div class="input-group">
+            <input type="text" class="card__input" id="inputLink" placeholder="https://...">
+            <input type="submit" class="card__button" value="Generate QR">
+          </div>
+        </form>
+        <p class="card__text">Scan the QR code to visit the website</p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
