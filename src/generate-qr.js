@@ -3,7 +3,7 @@ const formQR = document.getElementById('formQR')
 formQR.inputLink.value = ""
 
 const QR = new QRCode(containerQR, {
-  text: 'https://github.com/Amaya-14',
+  text: 'https://github.com/daldev14',
   width: 170,
   height: 170,
   colorDark: "#ffffff",
